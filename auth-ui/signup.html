@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <form class="auth-form">
+            <h2>Sign Up</h2>
+            <input type="text" placeholder="Full name" required>
+            <input type="email" placeholder="Email" required>
+
+            <div class="password-box">
+                <input type="password" id="pwd1" placeholder="Password" required>
+                <span onclick="toggle('pwd1')">👁</span>
+            </div>
+
+            <div class="password-box">
+                <input type="password" id="pwd2" placeholder="confirm Password" required>
+                <span onclick="toggle('pwd2')">👁</span>
+            </div>
+            <button type="submit" onclick="checkPassword()">Sign Up</button>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </form>
+    </div>
+    <script>
+        function toggle(id) {
+            var x = document.getElementById(id);
+            x.type = (x.type === "password") ? "text" : "password";
+        }
+        function checkPassword() {
+            var p1 = document.getElementById("pwd1").value;
+            var p2 = document.getElementById("pwd2").value;
+            if (p1 !== p2) {
+                alert("Password does not match");
+                event.preventDefault(); // stops form submission
+            }
+        }
+
+    </script>
+</body>
+</html>
