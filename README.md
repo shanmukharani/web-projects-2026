@@ -32,6 +32,17 @@ A simple authentication user interface project.
 
 ---
 
+### 🍔 Shanlicious Food Website
+A responsive static food website built using HTML and CSS.
+
+**Features:**
+- Modern layout  
+- Responsive design  
+- Semantic HTML  
+- Original repo: [Shanlicious Food Website](https://github.com/shanmukharani/shanlicious)
+
+---
+
 ## 🎯 Purpose of This Repository
 
 - Showcase practical web development projects
